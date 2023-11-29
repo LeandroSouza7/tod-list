@@ -11,11 +11,13 @@ import { TaskList } from '../../model/task-list';
 export class TodoListComponent {
 
     public taskList: Array <TaskList> = [
-      {task: "Minha tarefa", checked: true},
-      {task: "Minha tarefa 2", checked: false}
     ];
 
     constructor(){}
+
+    public setEmitTaskList(event: string){
+      this.taskList.push({task: event, checked: false});
+    }
 
     public deleteItemTaskList(event: number){
       this.taskList.splice(event, 1);
