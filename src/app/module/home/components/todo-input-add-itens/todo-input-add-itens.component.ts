@@ -6,7 +6,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./todo-input-add-itens.component.scss']
 })
 
-export class TodoInputAddItensComponent {
+export class TodoInputAddItensComponent{
 
   @Output() emitItemTaskList = new EventEmitter();
 
